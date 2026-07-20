@@ -26,7 +26,12 @@ a {
   color: var(--color-secondary);
 }
 
-/* ===== Theme switcher (temporary — remove after client picks) ===== */
+/* ===== Theme switcher (temporary — remove after client picks) =====
+   NOTE: update your HTML labels to match new names:
+   theme-leaf  -> "Ocean & Forest"
+   theme-moss  -> "True 50/50"
+   theme-meadow -> "Alternating Bands"
+*/
 input[type="radio"][name="theme"] {
   position: absolute;
   opacity: 0;
@@ -50,35 +55,35 @@ input[type="radio"][name="theme"] {
   font-size: 0.85rem;
 }
 
-/* ===== Palette 1: Leaf & Lake (default) ===== */
+/* ===== Palette 1: Ocean & Forest (default) ===== */
 .site-wrapper {
-  --color-primary: #2E5E3E;
-  --color-secondary: #2E7DA6;
-  --color-accent: #4A9B7F;
-  --color-bg: #EAF2E9;
-  --color-text: #1B2E28;
+  --color-primary: #155E75;
+  --color-secondary: #3B7A57;
+  --color-accent: #67C3D6;
+  --color-bg: #F0F5F2;
+  --color-text: #1E2A28;
 
   background: var(--color-bg);
   color: var(--color-text);
   display: block;
 }
 
-/* ===== Palette 2: Moss & Ocean ===== */
+/* ===== Palette 2: True 50/50 ===== */
 #theme-moss:checked ~ .site-wrapper {
-  --color-primary: #3C4A3A;
-  --color-secondary: #1E5F74;
-  --color-accent: #6E9B7A;
-  --color-bg: #F2EFE6;
-  --color-text: #232A24;
+  --color-primary: #1B4D6B;
+  --color-secondary: #2E7D5B;
+  --color-accent: #4FA8D8;
+  --color-bg: #EAF4F1;
+  --color-text: #1A2B2E;
 }
 
-/* ===== Palette 3: Meadow & Sky ===== */
+/* ===== Palette 3: Alternating Bands ===== */
 #theme-meadow:checked ~ .site-wrapper {
-  --color-primary: #3E7C5C;
-  --color-secondary: #6BAED6;
-  --color-accent: #8FC79A;
-  --color-bg: #FAFAF5;
-  --color-text: #2A2A2A;
+  --color-primary: #1F4E3D;
+  --color-secondary: #1D5C87;
+  --color-accent: #5AAFD6;
+  --color-bg: #F2F1EA;
+  --color-text: #232A24;
 }
 
 /* ===== Navbar ===== */
